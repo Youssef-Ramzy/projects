@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    const product = {
+      name: 'Macbook Pro',
+      price: 1200
+    };
+    console.log(product);
+    console.log(product.name);
+    console.log(product.price);
+    product.price += 300;
+    console.log(product.price);
+    product.stock = 11;
+    console.log(product.stock);
+    delete product.stock;
+    console.log(product);
+    */
+   const product2 = {
+    name: 'shirt',
+    'delevery-time': '1 day',
+    rating: {
+      stars: 3.7, 
+      count: 87
+    },
+    fun: function function1() {
+      console.log('function inside object');
+    }
+   };
+   console.log(product2);
+   console.log(product2['name']);
+   console.log(product2.name);
+   console.log(product2['delevery-time']);
+   console.log(product2.rating.count);
+   product2.fun();
+   console.log(JSON.stringify(product2));
+
+   const josnString = JSON.stringify(product2);
+   console.log(JSON.parse(josnString));
+  </script>
+</body>
+</html>
