@@ -43,6 +43,25 @@
 
    const josnString = JSON.stringify(product2);
    console.log(JSON.parse(josnString));
+
+   const object2 = {
+    message: 'hello',
+    price: 799
+   };
+
+   const { message, price } = object2;
+   console.log(message);
+   console.log(price);
+
+   const object3 = {
+    message,
+    method() {
+      console.log('method');
+    }
+   };
+
+   console.log(object3);
+   object3.method();
   </script>
 </body>
-</html>
+</html> 
